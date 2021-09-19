@@ -1,0 +1,16 @@
+title: Data Platform 101
+description: Getting started with Data Platform
+template:
+  repo: data-platform-101-template
+  name: data-platform-101
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
